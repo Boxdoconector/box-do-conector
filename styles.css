@@ -28,6 +28,9 @@ button, input, textarea { font: inherit; }
 .site-nav a:not(.nav-cta) { height: 100%; display: grid; align-items: center; border-bottom: 3px solid transparent; transition: border-color .15s; }
 .site-nav a:not(.nav-cta):hover { border-color: var(--orange); }
 .nav-cta { padding: 10px 14px; transition: background .15s; }
+.site-nav .nav-kit-link { display: inline-flex !important; align-items: center; gap: 8px; height: auto !important; padding: 10px 12px; border: 2px solid var(--orange) !important; color: var(--orange-dark); }
+.site-nav .nav-kit-link span { font-size: 15px; }
+.site-nav .nav-kit-link:hover { background: var(--orange); color: #fff; }
 .menu-toggle { display: none; }
 .hero { max-width: var(--content); margin: auto; min-height: 650px; display: grid; grid-template-columns: 1.05fr .95fr; position: relative; border-bottom: 4px solid var(--ink); }
 .swiss-grid { background-image: linear-gradient(rgba(0,0,0,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.035) 1px, transparent 1px); background-size: 24px 24px; background-position: center; }
@@ -55,6 +58,18 @@ h1, h2, h3, p { margin-top: 0; }
 .hero-index { position: absolute; bottom: 17px; left: 6%; font-size: 9px; letter-spacing: .18em; font-weight: 800; writing-mode: vertical-rl; transform: rotate(180deg); }
 .ticker { min-height: 64px; padding: 12px 5%; display: flex; align-items: center; justify-content: space-around; gap: 20px; background: var(--orange); color: #fff; font-size: 12px; font-weight: 900; letter-spacing: .13em; }
 .ticker i { font-size: 18px; font-style: normal; }
+.kit-feature { max-width: var(--content); margin: auto; padding: clamp(56px, 8vw, 108px) 6%; display: grid; grid-template-columns: 1.05fr .95fr; gap: 8%; align-items: stretch; border-bottom: 4px solid var(--ink); background: var(--muted); }
+.kit-feature-copy { align-self: center; }
+.kit-feature h2 { margin: 28px 0 20px; font-size: clamp(42px, 6vw, 76px); line-height: .98; letter-spacing: -.075em; font-weight: 900; }
+.kit-feature h2 span { color: var(--orange); }
+.kit-feature-copy > p:not(.section-number) { max-width: 480px; margin-bottom: 25px; font-size: 15px; line-height: 1.7; }
+.button-kit { background: var(--orange); border-color: var(--orange); color: #fff; gap: 22px; }
+.button-kit:hover { background: var(--ink); border-color: var(--ink); }
+.kit-feature-aside { min-height: 300px; padding: 25px; border: 2px solid var(--ink); background-color: var(--paper); background-image: linear-gradient(rgba(0,0,0,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.035) 1px, transparent 1px); background-size: 24px 24px; display: flex; flex-direction: column; justify-content: space-between; }
+.kit-feature-index, .kit-feature-caption { font-size: 9px; letter-spacing: .16em; font-weight: 900; }
+.kit-feature-mark { align-self: center; font-size: clamp(74px, 11vw, 145px); line-height: .85; letter-spacing: -.1em; font-weight: 900; }
+.kit-feature-mark span { color: var(--orange); }
+.kit-feature-caption { border-top: 1px solid var(--ink); padding-top: 12px; }
 .section { max-width: var(--content); margin: auto; padding: clamp(80px, 11vw, 150px) 6%; }
 .solutions { display: grid; grid-template-columns: .8fr 1.2fr; gap: 9%; }
 .section-number { color: var(--orange-dark); }
@@ -200,6 +215,7 @@ h1, h2, h3, p { margin-top: 0; }
   .site-nav { display: none; position: absolute; top: 68px; left: 0; right: 0; height: auto; padding: 14px 20px 20px; background: white; border-bottom: 2px solid var(--ink); flex-direction: column; align-items: stretch; gap: 0; }
   .site-nav.is-open { display: flex; }
   .site-nav a:not(.nav-cta) { min-height: 48px; border-bottom: 1px solid #aaa; }
+  .site-nav .nav-kit-link { min-height: 48px; margin: 6px 0; justify-content: space-between; }
   .nav-cta { margin-top: 12px; text-align: center; }
   .hero { min-height: 0; display: flex; flex-direction: column; }
   .hero-copy { min-height: 495px; padding: 48px 24px 30px; }
@@ -216,6 +232,9 @@ h1, h2, h3, p { margin-top: 0; }
   .hero-index { left: auto; right: 22px; bottom: 13px; writing-mode: initial; transform: none; }
   .ticker { min-height: 56px; padding: 10px 14px; justify-content: center; gap: 12px; font-size: 9px; letter-spacing: .07em; white-space: nowrap; overflow: hidden; }
   .ticker i { font-size: 14px; }
+  .kit-feature { display: block; padding: 66px 22px; }
+  .kit-feature h2 { font-size: clamp(42px, 12vw, 64px); }
+  .kit-feature-aside { min-height: 220px; margin-top: 34px; }
   .section { padding: 78px 22px; }
   .solutions, .process, .contact { display: block; }
   .section-heading h2, .process-title h2, .contact h2 { font-size: clamp(42px, 12vw, 62px); }
