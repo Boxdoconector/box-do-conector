@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monte seu conector | Box do Conector</title>
+  <meta name="description" content="Monte seu kit de conectores Amphenol AT, ATM e ATP passo a passo e solicite um orçamento.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="configurador/configurador.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Box do Conector, início">
+      <span class="brand-mark" aria-hidden="true">BX</span>
+      <span class="brand-name">BOX <b>DO CONECTOR</b></span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a class="nav-link" href="index.html#produtos">Produtos</a>
+      <a class="nav-link" href="index.html#quem-somos">Quem somos</a>
+      <a class="nav-link" href="index.html#visao">Nossa visão</a>
+      <button class="nav-orc" id="abrirOrcamento" type="button">
+        Orçamento <span class="nav-orc__n" id="contadorOrc">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro swiss-grid">
+      <div class="intro__in">
+        <p class="eyebrow"><span class="signal-dot"></span>Box do Conector<span class="eyebrow-rule"></span>Configurador</p>
+        <h1>MONTE SEU <span>CONECTOR.</span></h1>
+        <p class="intro__sub">Escolha a linha, as vias e os terminais. Montamos a lista completa de peças e você solicita o orçamento.</p>
+      </div>
+    </section>
+
+    <div class="config">
+      <!-- Passos -->
+      <div class="passos" id="passos"></div>
+
+      <!-- Painel do kit -->
+      <aside class="kit" id="kit" aria-live="polite"></aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">BX</span><span class="brand-name">BOX <b>DO CONECTOR</b></span></a>
+    <p>CONECTANDO QUALIDADE À SUA APLICAÇÃO.</p>
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a target="_blank" rel="noopener noreferrer" href="https://lista.mercadolivre.com.br/_CustId_3509431602">Mercado Livre</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://wa.me/5548991429569">WhatsApp</a>
+      <a href="index.html#quem-somos">Quem somos</a><a href="index.html#manifesto">Nosso propósito</a><a href="index.html#visao">Nossa visão</a>
+    </nav>
+    <span class="copyright">© 2026 BOX DO CONECTOR. TODOS OS DIREITOS RESERVADOS.</span>
+  </footer>
+
+  <!-- Gaveta do orçamento -->
+  <div class="gaveta" id="gaveta" hidden>
+    <div class="gaveta__fundo" data-fechar></div>
+    <section class="gaveta__painel" role="dialog" aria-modal="true" aria-labelledby="tituloOrc">
+      <header class="gaveta__topo">
+        <h2 id="tituloOrc">SEU ORÇAMENTO</h2>
+        <button class="fechar" type="button" data-fechar aria-label="Fechar">✕</button>
+      </header>
+      <div class="gaveta__corpo" id="gavetaCorpo"></div>
+    </section>
+  </div>
+
+  <div class="barra-mob" id="barraMob" hidden></div>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="configurador/catalogo.js"></script>
+  <script src="configurador/configurador.js"></script>
+</body>
+</html>
