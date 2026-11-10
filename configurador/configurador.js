@@ -1,4 +1,4 @@
-/* Box do Conector — Configurador "Monte seu conector"
+/* Box do Conector — Configurador "Monte seu kit"
    Lê os produtos de catalogo.js (window.CATALOGO). Não depende de bibliotecas. */
 (function () {
   'use strict';

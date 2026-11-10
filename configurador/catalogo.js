@@ -1,5 +1,5 @@
 /* =====================================================================
-   BOX DO CONECTOR — Catálogo do configurador "Monte seu conector"
+   BOX DO CONECTOR — Catálogo do configurador "Monte seu kit"
    ---------------------------------------------------------------------
    Este é o ÚNICO arquivo que precisa ser editado para adicionar/alterar
    produtos. O código do configurador lê tudo daqui.
@@ -19,7 +19,7 @@ window.CATALOGO = {
     // E-mail que recebe as solicitações (via FormSubmit.co).
     // Na 1ª solicitação o FormSubmit envia um e-mail de ativação para este endereço.
     emailDestino: "boxdoconector@gmail.com",
-    assuntoEmail: "Nova solicitação de orçamento — Monte seu conector",
+    assuntoEmail: "Nova solicitação de orçamento — Monte seu kit",
     whatsapp: "5548991429569" // mostra o botão "Enviar pelo WhatsApp" (deixe "" para esconder)
   },
 
